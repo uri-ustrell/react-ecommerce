@@ -12,28 +12,59 @@ const CardsWrapper = props => {
 		return [...new Set(allCategories)];
 	};
 
-	const onCategoryChange = () => {
+	const handleCategoryChange = products => {
 		const categorySelected = document.querySelector("#selectCardsCategory")
 			.value;
-		console.log(categorySelected);
+		const orderBy = document.querySelector("#orderCardsByPrice").value;
+
 		if (categorySelected) {
-			setProducts(() =>
-				props.products.filter(
-					prod => prod.category === categorySelected
-				)
+			products = products.filter(
+				prod => prod.category === categorySelected
 			);
-		} else {
-			setProducts(() => props.products);
 		}
+
+		switch (orderBy) {
+			case "asc":
+				products = products.sort((a, b) => a.price - b.price);
+				break;
+
+			case "desc":
+				products = products.sort((a, b) => b.price - a.price);
+
+				break;
+			default:
+				break;
+		}
+
+		setProducts(() => [...products]);
+	};
+
+	const handleOrderByChange = products => {
+		const orderBy = document.querySelector("#orderCardsByPrice").value;
+		/* switch (orderBy) {
+			case "asc":
+				setProducts(() =>
+					[...products].sort((a, b) => a.price - b.price)
+				);
+				break;
+			case "desc":
+				setProducts(() =>
+					[...products].sort((a, b) => b.price - a.price)
+				);
+				break;
+			default:
+				setProducts(() => [...products]);
+				break;
+		} */
 	};
 
 	return (
 		<>
 			<CardsFilter
 				categories={uniqueCategories()}
-				onCategorySelect={onCategoryChange}
+				onFilterChange={() => handleCategoryChange(props.products)}
 			/>
-			<div class="productCardsContainer">
+			<div className="productCardsContainer">
 				{products.map(product => {
 					return (
 						<CardProduct

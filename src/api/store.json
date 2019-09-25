@@ -2,67 +2,67 @@
 	"products": [
 		{
 			"name": "Producte 1",
-			"price": "65,2€",
+			"price": 65.2,
 			"photo": "https://www.calfuster.net/7112-large_default/rellotge-de-paret-blau.jpg",
 			"category": "paret"
 		},
 		{
 			"name": "Producte 2",
-			"price": "50€",
+			"price": 50,
 			"photo": "http://4.bp.blogspot.com/-3brGJlvF65I/VQbBfFNuwGI/AAAAAAAAABc/ZLBxJAQT81A/s1600/rellotge%2Banal%C3%B2gic.jpg",
 			"category": "paret"
 		},
 		{
 			"name": "Producte 3",
-			"price": "35,9€",
+			"price": 35.9,
 			"photo": "https://www.eltallerdelorfebre.net/1242-thickbox_default/rellotge-strata-jacob-jensen.jpg",
 			"category": "canell"
 		},
 		{
 			"name": "Producte 4",
-			"price": "22€",
+			"price": 22,
 			"photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx5C2rQLMLqddWNzko24tC1oK8uHcBjRIxy5gEXDCvsoQFAoTO",
 			"category": "canell"
 		},
 		{
 			"name": "Producte 5",
-			"price": "43,7€",
+			"price": 43.7,
 			"photo": "https://tiendaajedrezescacimat.es/3310-thickbox_default/rellotge-de-paret-model-3.jpg",
 			"category": "paret"
 		},
 		{
 			"name": "Producte 6",
-			"price": "15,4€",
+			"price": 15.4,
 			"photo": "https://www.bricabracbesalu.com/WebRoot/StoreIT2/Shops/139926/5CCE/B9A1/5E30/8EBF/FEE3/0A0A/B010/B7C6/ref1469_m.jpg",
 			"category": "butxaca"
 		},
 		{
 			"name": "Producte 7",
-			"price": "78,99€",
+			"price": 78.99,
 			"photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1opHgDveksigJaJFVYyJGHKADTDFSylKqcJrSpazTZq_t7So",
 			"category": "canell"
 		},
 		{
 			"name": "Producte 8",
-			"price": "52,3€",
+			"price": 52.3,
 			"photo": "https://images-na.ssl-images-amazon.com/images/I/61PLMefliFL._SY355_.jpg",
 			"category": "canell"
 		},
 		{
 			"name": "Producte 9",
-			"price": "41,9€",
+			"price": 41.9,
 			"photo": "https://mobomx.vteximg.com.br/arquivos/ids/156513-1000-1000/smartwatch-mobo-move-2-mbsw-2-0-negro-portada-01.jpg?v=636724784216770000",
 			"category": "canell"
 		},
 		{
 			"name": "Producte 10",
-			"price": "122,9€",
+			"price": 122.9,
 			"photo": "https://5.imimg.com/data5/GI/IM/MY-40207117/vintage-mini-wooden-sand-clock-500x500.jpg",
 			"category": "sorra"
 		},
 		{
 			"name": "Producte 11",
-			"price": "843,9€",
+			"price": 843.9,
 			"photo": "https://5.imimg.com/data5/ST/QR/MY-37338430/corporate-gift-500x500.jpg",
 			"category": "sorra"
 		}

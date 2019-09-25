@@ -2,37 +2,46 @@ import React from "react";
 
 const CardsFilter = props => {
 	return (
-		<div class="cardsFilter">
-			<div class="input-group mb-3">
-				<div class="input-group-prepend">
-					<label class="input-group-text" for="inputGroupSelect01">
+		<div className="cardsFilter">
+			<div className="input-group mb-3">
+				<div className="input-group-prepend">
+					<label
+						className="input-group-text"
+						htmlFor="selectCardsCategory"
+					>
 						Categories
 					</label>
 				</div>
 				<select
-					class="custom-select"
+					className="custom-select"
 					id="selectCardsCategory"
-					onChange={props.onCategorySelect}
+					onChange={props.onFilterChange}
 				>
-					<option selected value="">
-						filtra per tipus de rellotge...
-					</option>
+					<option value="">filtra per tipus...</option>
 					{props.categories.map(category => (
-						<option value={category}>{category}</option>
+						<option key={category} value={category}>
+							{category}
+						</option>
 					))}
 				</select>
 			</div>
-			<div class="input-group mb-3">
-				<div class="input-group-prepend">
-					<label class="input-group-text" for="inputGroupSelect01">
+			<div className="input-group mb-3">
+				<div className="input-group-prepend">
+					<label
+						className="input-group-text"
+						htmlFor="orderCardsByPrice"
+					>
 						Options
 					</label>
 				</div>
-				<select class="custom-select" id="inputGroupSelect01">
-					<option selected>Choose...</option>
-					<option value="1">One</option>
-					<option value="2">Two</option>
-					<option value="3">Three</option>
+				<select
+					className="custom-select"
+					id="orderCardsByPrice"
+					onChange={props.onFilterChange}
+				>
+					<option value="">Ordena per preu...</option>
+					<option value="asc">de menys a més</option>
+					<option value="desc">de més a menys</option>
 				</select>
 			</div>
 		</div>
