@@ -1,12 +1,21 @@
 import React from "react";
 import CardProduct from "./CardProduct";
 
-const CardsWrapper = () => {
-	return (
+const CardsWrapper = props => (
+	<>
 		<div class="productCardsContainer">
-			<CardProduct name={"product haha"} price={"65,4€"} />
+			{props.products.map(product => {
+				return (
+					<CardProduct
+						name={product.name}
+						price={product.price}
+						photo={product.photo}
+						category={product.category}
+					/>
+				);
+			})}
 		</div>
-	);
-};
+	</>
+);
 
 export default CardsWrapper;
