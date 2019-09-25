@@ -9,3 +9,8 @@
 .productCard {
 	width: 250px;
 }
+
+.cardsFilter {
+  height: 50px;
+  display: flex;
+}
