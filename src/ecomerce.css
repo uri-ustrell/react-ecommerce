@@ -5,12 +5,22 @@
 	grid-gap: 10px;
 	grid-auto-flow: dense;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	margin: auto;
+	width: 90%;
 }
 .productCard {
 	width: 250px;
 }
 
 .cardsFilter {
-  height: 50px;
-  display: flex;
+	height: 50px;
+	display: flex;
+	margin: auto;
+	width: 90%;
+}
+
+h1 {
+	margin: auto;
+	width: 90%;
+	text-align: center;
 }
